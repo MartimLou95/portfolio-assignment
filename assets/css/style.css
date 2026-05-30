@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e3;
+    color: #050505
+}
+
+header {
+    padding: 20px;
+}
+
+nav { display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #050505;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #2769ab;
+}
+
+main {
+    padding: 20px;
+}
+
+#intro {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
