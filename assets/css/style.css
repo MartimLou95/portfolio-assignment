@@ -2,14 +2,15 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e8e8e3;
-    color: #050505
+    color: #050505;
 }
 
 header {
     padding: 20px;
 }
 
-nav { display: flex;
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,4 +42,37 @@ main {
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#work > p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f5f5f0;
+    padding: 24px;
+    border: 1px solid #c9c9c2;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    color: #050505;
+    font-weight: bold;
+    text-decoration: none;
 }
