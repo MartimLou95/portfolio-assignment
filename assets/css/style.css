@@ -6,27 +6,37 @@ body {
 }
 
 header {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 28px;
+}
+
+.site-logo {
+    color: #050505;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
     color: #050505;
     font-weight: bold;
-    margin: 0 10px;
 }
 
-nav a:hover {
+nav a:hover,
+.site-logo:hover {
     color: #2769ab;
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -44,20 +54,41 @@ h1 {
     margin-bottom: 20px;
 }
 
+.eyebrow {
+    margin: 0 0 16px;
+    font-size: 0.85em;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.intro-meta {
+    margin: 12px 0 0;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: #050505;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #010000;
+}
+
+.button-link:hover {
+    color: #2769ab;
+    border-bottom-color: #2769ab;
+}
+
 section {
     padding: 60px 0;
 }
 
-#work > p {
-    max-width: 600px;
-    margin: 0 auto 40px;
-    font-size: 1.2em;
-    color: #333;
-}
-
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 360px));
     gap: 20px;
 }
 
@@ -67,8 +98,19 @@ section {
     border: 1px solid #c9c9c2;
 }
 
-.project-card h3 {
-    margin-top: 0;
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 20px;
+    filter: grayscale(20%);
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.project-card:hover img {
+    filter: grayscale(100%);
 }
 
 .project-card a {
@@ -91,4 +133,38 @@ section {
 #contact a {
     color: #050505;
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-top: 1px solid #c9c9c2;
+}
+
+footer a {
+    color: #050505;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #intro {
+        min-height: 50vh;
+    }
 }
