@@ -76,3 +76,19 @@ section {
     font-weight: bold;
     text-decoration: none;
 }
+
+#about,
+#contact {
+    max-width: 700px;
+}
+
+#about p,
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#contact a {
+    color: #050505;
+    font-weight: bold;
+}
