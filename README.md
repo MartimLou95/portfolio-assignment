@@ -2,6 +2,8 @@
 
 Portfolio page built step by step using HTML, CSS, Git.
 
+Live site: https://martimlou95.github.io/portfolio-assignment/
+
 ## Project Notes
 
 - I have made the previous project repo private because I didn't commit step by step and therefore missed an important part of the process.
